@@ -2,14 +2,14 @@ package exercise;
 
 public class Exercise22MergeArray {
 	
-	static int[] intArr01 = new int[]{345, 32, 65 ,24 ,65 ,765 ,32 ,765 ,43};
-	static int[] intArr12 = new int[]{3, 547, 65, 243, 877, 34, 98, 543, 23, 32, 24};
-	static int[] intArr10 = new int[]{1, 1, -1, 1};
-	static int[] intArr20 = new int[]{2, 2, -2, -1};
-	static int[] intArr1 = new int[]{};
-	static int[] intArr2 = new int[]{};
-	static int[] intArr31 = new int[] {2};
-	static int[] intArr32 = new int[]{-4};
+	static int[] intArr1 = new int[]{345, 32, 65 ,24 ,65 ,765 ,32 ,765 ,43};
+//	static int[] intArr2 = new int[]{3, 547, 65, 243, 877, 34, 98, 543, 23, 32, 24};
+//	static int[] intArr1 = new int[]{1, 1, -1, 1};
+	static int[] intArr2 = new int[]{2, 2, -2, -1};
+//	static int[] intArr1 = new int[]{};
+//	static int[] intArr2 = new int[]{};
+//	static int[] intArr1 = new int[] {2};
+//	static int[] intArr2 = new int[]{-4};
 	
 	public static void main (String args[]) {
 		fullSortUnique(intArr1, intArr2);
@@ -98,7 +98,7 @@ public class Exercise22MergeArray {
 		}
 		return uSort;
 	}
-	
+//  uses all previous methods together; fails if both arrays are empty	
 	public static void fullSortUnique(int[] intArr1, int[] intArr2) {
 		if (intArr1 != null && intArr2 != null) {
 			int[] merged;
@@ -111,9 +111,7 @@ public class Exercise22MergeArray {
 			uniqueSort = uniqueSort(sorted);			
 			for(int each:uniqueSort) {
 				System.out.println(each);
-			}
-		System.out.println("both arrays are empty");
-			
+			}			
 		}
 	}
 }
